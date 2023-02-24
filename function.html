@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //변수선언문
+  let hyun =1;
+  console.log(hyun);
+  hyun =32;
+  console.log(hyun);
+    //함수선언문
+  function valueChange(a,b,c){ //중괄호 scope영역을 다른데이터가 절대 침범못함(직접입력)
+
+    // return a +b+c; // 호출한다. 만들어놓고 호출할때 등장! 콜링하면 리턴받는다. 
+    // Q. 안녕하세요 추가하고싶다면? 
+    //1.매개변수 c 를 추가하기 . 
+    //ex) 페이스비번 -> 아주까다로운 매개변수를 추가한 것 . 
+    //2.return a +b+"안녕하세요"; <- 리터럴 고정문자로 썼을때, 변경이 불가능한경우 
+    
+    if( typeof(a)=== "String") {
+      if( typeof(b)=== "String") {
+        if( typeof(c)=== "String") 
+        return a+ b+ c ; 
+      }
+    }  //절차를 볼 수 있도록 풀어쓴것임. 어떻게 봐야할까 ? 눈으로 보기 . 
+}  
+  hyun = valueChange(1,3,61);//함수는 대부분 소괄호, 중괄호와 같이쓴다.alert/log/...
+  console.log(hyun);   //객체에서 쓰고있는 변수 key!!!!!  
+                       //매개변수 
+  // 매개변수가 숫자라면? 더해버리기때문에 조건을 붙인다.
+  </script>
+  
+</body>
+</html>
