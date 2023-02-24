@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+  </div>
+  <script>
+    // let root = document.getElementById('root');
+    // function percertCalculator(realValue, totlaValue) {
+    //   let result = ( realValue/ totlaValue) * 100;
+    //   return result + "%" ; 
+    // } // 총 100점에서 20점은 몇퍼센트? 
+    // console.log(percertCalculator(20,100)); //20
+    // root.children[0].innerHTML = percertCalculator(20,100);
+    // root.children[1].innerHTML = percertCalculator(44,36790);
+    // root.children[2].innerHTML = percertCalculator(5,100);
+
+    //Q . 빼기 공식은 어떻게 만들까?
+    let root = document.getElementById('root');
+    function subtractionreturnsString (a, b) {
+      let result = a- b  ; 
+      return  result + "점"; 
+    }
+    console.log(subtractionreturnsString(100,20)); //80점 
+    root.children[0].innerHTML = subtractionreturnsString(100,20);
+
+  
+
+  </script>
+</body>
+</html>
